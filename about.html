@@ -28,6 +28,9 @@
    
     <!-- FOR MOBILE / SMALL SCREENS -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <!-- FOR IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,700;1,700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -35,19 +38,16 @@
     <!-- ADOBE FONTS -->
     <link rel="stylesheet" href="https://use.typekit.net/eap1orw.css">
 
-    <!-- SWIPER -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body>
    
-    <header class="site-header toggle-nav clear-header" data-navstate="closed">
+    <header class="site-header toggle-nav" data-navstate="closed">
         <div class="container">
             <div class="site-id">
-                <a class="logo-wrapper" href="index.html"><img src="img/creatingha_logo.svg" alt="Creating Ha Logo" width="220" height="55"></a>
+                <a href="index.html"><img src="img/creatingha_logo.svg" alt="Creating Ha Logo" width="220" height="55"></a>
                 <h1 class="hide-visually"><a href="index.html">Creating Ha</a></h1>
             </div>
             <nav class="site-nav">
@@ -63,31 +63,35 @@
     </header>
 
     <main>
-        <section class="hero">
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="img/cards1.jpg" alt="Three Greeting Cards" width="1503" height="1000"></div>
-                    <div class="swiper-slide"><img src="img/wood3_shadow.jpg" alt="Wood Print" width="1503" height="1000"></div>
-                    <div class="swiper-slide"><img src="img/canvas1_dark.jpg" alt="Canvas" width="1503" height="1000"></div>
-                    <div class="swiper-slide"><img src="img/aluminum1_dark.jpg" alt="Aluminum Print" width="1503" height="1000"></div>
-                    <div class="swiper-slide"><img src="img/matte5.jpg" alt="Matted Print" width="1503" height="1000"></div>
+        <section>
+            <div class="container">
+                <div class="row vertical-centered">
+                    <div class="column one-half">
+                        <img src="img/cards3.jpg" alt="Wood Print" width="1503" height="1000" />
+                    </div>
+
+                    <div class="column one-half">
+                        <h3 class="section-title">About</h3>
+                        <h2 class="section-heading">FINDING JOY IN ART</h2>
+                        <p>In the humdrum of day-to-day life, Creating Ha is on a mission to uplift hearts and inspire souls in their pursuit of happiness through the creative artworks of Lily Lam and her line of quality designed goods. We are a lifestyle brand that encourages humanity to live their best lives filled with light, love, hope, peace, and joy through fun and whimsical products that break the monotony of daily living. Let’s harness the powerful benefits of finding joy in art and design!</p>
+                    </div>    
                 </div>
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>                
+            </div>
         </section>
 
-        <section class="call-to-action">
-            <div class="container text-centered">
-                <h1>EXPLORE THE ARTWORKS OF LILY LAM</h1>
-                <a href="gallery.html" class="button">VIEW GALLERY</a>
-            </div>
+        <section>
+            <div class="container">
+                <div class="row swapped vertical-centered">
+                    <div class="column one-half">
+                        <img src="img/profile1-1.jpg" alt="Lily Lam" width="1032" height="1200" />
+                    </div>
+
+                    <div class="column one-half"> 
+                        <h2 class="section-heading">THE ARTIST</h2>
+                        <p>Lily Lam is an artist and designer born in China and grew up in Honolulu, Hawai‘i where she currently resides. She began drawing at a young age and attended summer classes at the Honolulu Academy of Arts. Her passion for art led her to compete in numerous art contests growing up. She has won over 15 awards and was recognized by former mayors of Honolulu, Frank Fasi and Jeremy Harris, as well as by former governor of Hawai‘i, Ben Cayetano. She studied electrical engineering at Boston University and accounting at University of Hawai‘i at Mānoa. After practicing accounting for nearly ten years, Lily founded Creating Ha as a creative outlet to reconnect with her childhood passion. Aside from art, she enjoys Zumba, photography, and travel.</p>
+                    </div>
+                </div>
+            </div>       
         </section>
     </main>
 
@@ -125,28 +129,6 @@
         </div>  
     </footer>
    
-    <!-- SWIPER JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-    <script>
-        //INITIALIZE SWIPER JS
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            loop: true,
-        
-            // If we need pagination
-            pagination: {
-            el: '.swiper-pagination',
-            },
-        
-            // Navigation arrows
-            navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
-
     <!-- MAIN JS FILE -->
     <script src="js/script.js"></script>
     
