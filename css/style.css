@@ -331,9 +331,15 @@ body { margin: 0; }
     font-weight: 600;
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 768px) {
     .site-header a {
-        font-size: 112.5%;
+        font-size: 118%;
+    }
+}
+
+@media (min-width: 1049px) {
+    .site-header a {
+        font-size: 108%;
     }
 }
 
@@ -450,7 +456,7 @@ section {
 } */
 
 /* TOGGLE NAV */
-@media (max-width: 1049px) {
+@media (max-width: 767px) {
     .toggle-nav .container {
         display: flex;
         width: 100%;
@@ -671,10 +677,37 @@ img, svg, canvas, video {
     padding: 0.5em 0 3em 0;
 }
 
+@media (max-width: 812px) {
+    .call-to-action h1 {
+        font-size: 2.25em;
+    }
+}
+
+@media (max-width: 609px) {
+    .call-to-action h1 {
+        font-size: 1.5em;
+    }
+}
+
+#about {
+    padding-top: 0em;
+    background-image: url("../img/about_background.jpg");
+    background-size: cover;
+    background-position: center 55%;
+}
+
+#artist {
+    background-image: url("../img/artist_background.jpg");
+    background-size: cover;
+    background-position: center 55%;
+}
+
 #gallery {
-    background-color: black;
     padding: 5em 0 3em 0;
     margin-bottom: 3em;
+    background-image: url("../img/gallery_background.jpg");
+    background-size: cover;
+    background-position: center 55%;
 }
 
 #gallery .section-title::after {
@@ -688,6 +721,9 @@ img, svg, canvas, video {
 
 #contact {
     padding: 0em;
+    background-image: url("../img/contact_background.jpg");
+    background-size: cover;
+    background-position: center 85%;
 }
 
 #contact .section-title::after {
