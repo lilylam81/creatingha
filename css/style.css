@@ -563,7 +563,6 @@ section {
     right: 10px;
     padding: 20px;
     color: var(--swiperlinkcolor);
-    size: var(--swiper-navigation-size);
 }
 
 .swiper-button-next:hover,
@@ -583,7 +582,7 @@ section {
 
 @media (min-width: 1250px) {
     .swiper img {
-        height: 95vh;
+        height: 100vh;
         object-fit: cover;
     }
 }
@@ -702,6 +701,18 @@ img, svg, canvas, video {
     background-image: url("../img/artist_background.jpg");
     background-size: cover;
     background-position: center 55%;
+}
+
+.awards {
+    background-color: rgba(253,242,226,1);
+    box-shadow: 7px 7px #ededed;
+    border-radius: 25px;
+    padding: 3em;
+    margin-bottom: 2em;
+}
+
+.awards h3 {
+    color: rgba(235,190,175,1);
 }
 
 #gallery {
