@@ -252,6 +252,14 @@ body { margin: 0; }
         max-width: 21%;
     }
 
+    .row > .column.one-fifth {
+        max-width: 16%;
+    }
+
+    .row > .column.two-fifths {
+        max-width: 36%;
+    }
+
     .row > .column.centered {
         margin-left: auto;
         margin-right: auto;
@@ -752,4 +760,33 @@ img, svg, canvas, video {
 
 .column.one-half.contact-info p {
     padding-bottom: 0.5em;
+}
+
+/* PRODUCT DETAILS CSS */
+.product {
+    padding-top: 0em;
+}
+
+.product h2 {
+    margin-top: 0em;
+    padding-bottom: 0.5em;
+    font-style: italic;
+}
+
+.product h3 {
+    font-family: 'Avenir Next', Montserrat, sans-serif;
+    color: rgba(235,190,175);
+}
+
+.product h5 {
+    font-weight: normal;
+    font-family: 'Avenir Next', Montserrat, sans-serif;
+    padding-top: 1em;
+}
+
+.product h6 {
+    font-family: 'Avenir Next', Montserrat, sans-serif;
+    border: solid 1px black;
+    padding-left: 1em;
+    
 }
