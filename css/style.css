@@ -451,18 +451,6 @@ section {
     padding: 0 0 2em 0;
 }
 
-/* .hero img {
-    width: 100%;
-    display: block;
-} */
-
-/* @media (min-width: 1250px) {
-    .hero img {
-        height: 95vh;
-        object-fit: cover;
-    }
-} */
-
 /* TOGGLE NAV */
 @media (max-width: 767px) {
     .toggle-nav .container {
@@ -700,23 +688,21 @@ img, svg, canvas, video {
 
 #about {
     padding-top: 0em;
-    background-image: url("../img/about_background.jpg");
-    background-size: cover;
-    background-position: center 55%;
 }
 
 #artist {
-    background-image: url("../img/artist_background.jpg");
-    background-size: cover;
-    background-position: center 55%;
+    padding-top: 7.5em;
+    background-color: rgba(240,241,236,1);
+}
+
+@media (max-width: 1450px) {
+    #artist {
+        padding-top: 5em;
+    }
 }
 
 #gallery {
-    padding: 5em 0 3em 0;
-    margin-bottom: 3em;
-    background-image: url("../img/gallery_background.jpg");
-    background-size: cover;
-    background-position: center 55%;
+    padding: 0em;
 }
 
 #gallery .section-title::after {
@@ -730,9 +716,6 @@ img, svg, canvas, video {
 
 #contact {
     padding: 0em;
-    background-image: url("../img/contact_background.jpg");
-    background-size: cover;
-    background-position: center 85%;
 }
 
 #contact .section-title::after {
@@ -752,10 +735,7 @@ img, svg, canvas, video {
 
 /* AWARDS CSS */
 #awards-section {
-    /* padding-bottom: 1.5em; */
-    background-image: url("../img/awards_background.jpg");
-    background-size: cover;
-    background-position: center 55%;
+    padding: 4em 0em 1.5em 0em;
 }
 
 .awards {
