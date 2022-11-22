@@ -252,12 +252,12 @@ body { margin: 0; }
         max-width: 21%;
     }
 
-    .row > .column.one-fifth {
-        max-width: 16%;
+    .row > .column.one-ninth {
+        max-width: 7.1111%;
     }
 
-    .row > .column.two-fifths {
-        max-width: 36%;
+    .row > .column.four-ninths {
+        max-width: 40.4444%;
     }
 
     .row > .column.centered {
@@ -831,5 +831,5 @@ img, svg, canvas, video {
     font-family: 'Avenir Next', Montserrat, sans-serif;
     border: solid 1px black;
     padding-left: 1em;
-    
+    width: 12.75em;
 }
