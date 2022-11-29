@@ -600,10 +600,19 @@ section {
     width: 100%;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1250px) and (min-height: 500px) {
     .swiper img {
         height: 100vh;
         object-fit: cover;
+    }
+}
+
+/* ADJUST HOME PAGE CONTAINER */
+@media (min-width: 1250px) and (min-height: 500px) {
+    .home .site-header .container, 
+    .home .hero  {
+        max-width: 150vh;
+        margin: 0 auto;
     }
 }
 
