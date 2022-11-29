@@ -7,10 +7,19 @@ function hideallawarditems() {
   };
 };
 
+function resetallawardnavitems() {
+  for (let i = 0 ; i <  awardnavitems.length ; i++) {
+    awardnavitems[i].classList.remove("selected");
+  };
+};
+
 for (let i = 0 ; i <  awardnavitems.length ; i++) {
   awardnavitems[i].addEventListener('click',function(e){
     let href = this.getAttribute("href");
     hideallawarditems();
-    document.querySelector(href).setAttribute('data-currentaward','true');
+    resetallawardnavitems();
+    document.querySelector(href).setAttribute
+    ('data-currentaward','true');
+    this.classList.toggle("selected");
   });
 };

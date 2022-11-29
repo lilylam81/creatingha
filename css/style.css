@@ -467,7 +467,6 @@ section {
 
 .section-heading {
     color: rgba(235,190,175);
-    max-width: 38em;
 }
 
 /* HERO */
@@ -834,12 +833,16 @@ img, svg, canvas, video {
     top: 2px;
     width: 15px;
     height: 15px;
-    background-color: rgba(235,190,175,1);
+    background-color: white;
     border: solid 1px black;
     border-radius: 100%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
+}
+
+.awards-nav a.selected::before {
+    background-color: rgba(235,190,175,1);
 }
 
 .awards[data-currentaward='false'] {
