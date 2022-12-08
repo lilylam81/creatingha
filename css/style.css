@@ -138,6 +138,9 @@ img {
 
 /* BUTTONS */
 .button, button, form input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     font-size: inherit;
     line-height: 1;
     background-color: rgba(168,203,180,1);
