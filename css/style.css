@@ -888,3 +888,10 @@ img, svg, canvas, video {
     font-family: 'Avenir Next', Montserrat, sans-serif;
     margin-right: 2em;
 }
+
+/* IMAGE SCALES UP ON HOVER */
+@media (min-width: 768px) {
+    .scale img:hover {
+        transform: scale(1.1);
+    }
+}
